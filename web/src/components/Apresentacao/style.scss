@@ -1,0 +1,40 @@
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    @media screen and (max-width : '500px') {
+        width: 85%;
+        height: fit-content;
+        padding: 100px 0;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h1{
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+        }
+        h3{
+            text-align: center;
+            color: white;
+            font-size: 1.1rem;
+        }
+    }
+    .img{
+        background-color: #181818;
+        padding: 10%;
+        border-radius: 15px;
+        @media screen and (max-width : '500px') {
+            width: 100%;
+        }
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
