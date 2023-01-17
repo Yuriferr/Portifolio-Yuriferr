@@ -27,7 +27,18 @@ header{
             display: none;
         }
         @media screen and (min-width: '501px') {
-            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            &:hover{
+                border-bottom: 1px solid white;
+            }
         }
     }
 }

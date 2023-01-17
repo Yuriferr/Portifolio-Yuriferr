@@ -1,35 +1,56 @@
+$ColorPurple: #BD00FF;
+$ColorBlue: #0047AB;
+
 .apresentacao{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 100px;
     @media screen and (max-width : '500px') {
         width: 85%;
+        justify-content: center;
         height: fit-content;
         padding: 100px 0;
+        flex-direction: column;
+        gap: 100px;
     }
-    div{
+    @media screen and (min-width : '501px') {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        gap: 10%;
+        padding: 100px 0;
+    }
+    .infos{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 10px;
+        padding: 5%;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.2);
         h1{
             text-align: center;
             color: white;
             font-size: 2rem;
+            white-space: nowrap;
         }
         h3{
             text-align: center;
             color: white;
             font-size: 1.1rem;
+            white-space: nowrap;
         }
     }
     .img{
         background-color: #181818;
-        padding: 10%;
         border-radius: 15px;
         @media screen and (max-width : '500px') {
             width: 100%;
+            padding: 10%;
+        }
+        @media screen and (min-width : '501px') {
+            width: 30%;
+            padding: 5%;
         }
         img{
             object-fit: cover;

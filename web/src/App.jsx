@@ -5,6 +5,7 @@ import Logo from './assets/logoBranca.png'
 import Apresentacao from './components/Apresentacao'
 
 import Header from './components/Header'
+import Projetos from './components/Projetos'
 
 export default function App() {
   const [iconMenu, setIconMenu] = useState(false)
@@ -27,7 +28,7 @@ export default function App() {
         <Apresentacao/>
       </section>
       <section className='containerProjetos'>
-
+        <Projetos/>
       </section>
     </div>
   )

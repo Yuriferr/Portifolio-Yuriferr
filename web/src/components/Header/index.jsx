@@ -43,7 +43,8 @@ export default function Header(){
                 <img src={Logo}/>
             </div>
             <div className='links'>
-                <p onClick={Projetos}>Projetos</p>
+                <a href="#sobre">Sobre</a>
+                <a href="#projetos">Projetos</a>
             </div>
 
             <div className="iconMenu">
