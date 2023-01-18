@@ -12,7 +12,7 @@ export default function Apresentacao(){
 
     return(
         <div className="apresentacao">
-            <div className="infos">
+            <div data-aos="fade-right" className="infos">
                 <h1>Yuri Fernandes</h1>
                 <h3>Desenvolvedor Full Stack</h3>
             </div>
