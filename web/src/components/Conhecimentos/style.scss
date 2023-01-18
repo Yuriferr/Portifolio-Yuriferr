@@ -1,6 +1,9 @@
+$ColorTranslucentWhite: rgba(255, 255, 255, 0.2);
+$ColorBaclk: #181818;
+
 .conhecimentos{
     width: 70%;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: $ColorTranslucentWhite;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -40,6 +43,7 @@
         }
     }
     h1{
+        color: $ColorBaclk;
         @media screen and (max-width : '500px') {
             margin-bottom: 10px;
          }

@@ -1,5 +1,6 @@
 $ColorPurple: #BD00FF;
 $ColorBlue: #0047AB;
+$ColorBaclk: #181818;
 
 .projetos{
     height: fit-content;
@@ -15,7 +16,7 @@ $ColorBlue: #0047AB;
     }
     h1{
         text-align: center;
-        color: #181818;
+        color: $ColorBaclk;
         font-size: 2rem;
     }
     .cards{
@@ -33,7 +34,7 @@ $ColorBlue: #0047AB;
             width: 100%;
             overflow: hidden;
             border-radius: 15px;
-            background-color: #181818;
+            background-color: $ColorBaclk;
             position: relative;
             display: flex;
             flex-direction: column;

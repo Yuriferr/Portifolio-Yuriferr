@@ -3,6 +3,10 @@ import './style.scss'
 
 import Info from '../../assets/infos.png'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 export default function Apresentacao(){
 
 
@@ -13,7 +17,7 @@ export default function Apresentacao(){
                 <h3>Desenvolvedor Full Stack</h3>
             </div>
 
-            <div className="img">
+            <div data-aos="zoom-in" className="img">
                 <img src={Info}/>
             </div>
         </div>
