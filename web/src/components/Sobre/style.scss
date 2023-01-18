@@ -1,0 +1,37 @@
+
+.sobre{
+    width: 80%;
+    height: fit-content;
+    background-color: #181818;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: '500px') {
+        width: 80%;
+        padding: 20px 7%;
+        gap: 20px;
+    }
+    @media screen and (min-width: '501px') {
+        width: 85%;
+        padding: 50px 10%;
+        gap: 20px;
+    }
+    h1{
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+        @media screen and (min-width: '501px') {
+            margin-bottom: 50px;
+        }
+    }
+    .texto{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        p{
+            color: white;
+            font-size: 1rem;
+            text-align: justify;
+        }
+    }
+}

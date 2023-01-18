@@ -33,18 +33,30 @@ export default function Header(){
         setAnchorEl(null);
     };
 
+    function Sobre(){
+        window.location.href = "#sobre";
+    
+    }
     function Projetos(){
         window.location.href = "#projetos";
+    }
+
+    function Conhecimentos(){
+        window.location.href = "#conhecimentos";
     }
 
     return(
         <header>
             <div className='logo'>
-                <img src={Logo}/>
+                <a href="">
+                    <img src={Logo}/>
+                </a>
             </div>
             <div className='links'>
                 <a href="#sobre">Sobre</a>
                 <a href="#projetos">Projetos</a>
+                <a href="#conhecimentos">Conhecimentos</a>
+                <a href="#contatos">Contatos</a>
             </div>
 
             <div className="iconMenu">
@@ -65,7 +77,10 @@ export default function Header(){
                 'aria-labelledby': 'basic-button',
                 }}
             >
-                <MenuItem onClick={handleClose}><p onClick={Projetos}>Projetos</p></MenuItem>
+                <MenuItem onClick={handleClose}><a href="#sobre">Sobre</a></MenuItem>
+                <MenuItem onClick={handleClose}><a href="#projetos">Projetos</a></MenuItem>
+                <MenuItem onClick={handleClose}><a href="#conhecimentos">Conhecimentos</a></MenuItem>
+                <MenuItem onClick={handleClose}><a href="#contatos">Contatos</a></MenuItem>
             </Menu>
         </header>
     )

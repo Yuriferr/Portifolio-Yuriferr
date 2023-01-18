@@ -3,9 +3,12 @@ import './App.scss'
 
 import Logo from './assets/logoBranca.png'
 import Apresentacao from './components/Apresentacao'
+import Conhecimentos from './components/Conhecimentos'
+import Footer from './components/Footer'
 
 import Header from './components/Header'
 import Projetos from './components/Projetos'
+import Sobre from './components/Sobre'
 
 export default function App() {
   const [iconMenu, setIconMenu] = useState(false)
@@ -27,9 +30,36 @@ export default function App() {
       <section className='containerApresentacao'>
         <Apresentacao/>
       </section>
-      <section className='containerProjetos'>
+
+      <div className='containerBorda'> 
+        <div className='borda'/>
+      </div>
+
+
+      <section id='sobre' className='containerSobre'>
+        <Sobre/>
+      </section>
+
+      <div className='containerBorda'> 
+        <div className='borda'/>
+      </div>
+
+      <section id='projetos' className='containerProjetos'>
         <Projetos/>
       </section>
+
+      <div className='containerBorda'> 
+        <div className='borda'/>
+      </div>
+
+      <section id='conhecimentos' className='containerConhecimentos'>
+        <Conhecimentos/>
+      </section>
+
+      <section id='contatos'>
+        <Footer/>
+      </section>
+
     </div>
   )
 }

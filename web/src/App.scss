@@ -18,9 +18,21 @@ $ColorBlue: #0047AB;
         height: fit-content;
     }
     @media screen and (min-width: '501px') {
-        height: calc(100vh - 60px);
+        height: 100vh;
     }
 }
+
+.containerSobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: '500px') {
+        width: 100%;
+        height: fit-content;
+        padding: 20px 0;
+    }
+}
+
 
 .containerProjetos{
     display: flex;
@@ -32,3 +44,30 @@ $ColorBlue: #0047AB;
         padding: 20px 0;
     }
 }
+
+.containerConhecimentos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: '500px') {
+        width: 100%;
+        height: fit-content;
+        padding: 20px 0;
+    }
+}
+
+.containerBorda{
+    margin: auto;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .borda{
+        width: 70%;
+        height: 2px;
+        background-color: white;
+        margin: 50px 0;
+        border-radius: 15px;
+    }
+}
+
+

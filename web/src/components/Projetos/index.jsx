@@ -5,6 +5,10 @@ import siteDeusesGregos from '../../assets/siteDeusesGregos.png'
 import landingPage from '../../assets/landingpageYuriferr.png'
 import loginLeagueOfLegends from '../../assets/loginLeagueOfLegends.png'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 
 export default function Projetos(){
     const [projetos, setProjetos] = useState([
@@ -27,14 +31,14 @@ export default function Projetos(){
 
     return(
         <div className="projetos">
-            <h1>Projetos</h1>
+            <h1 data-aos="fade-right">Projetos</h1>
             <div className="cards">
                 {projetos.map((item, index) => {
                     return(
-                        <div>
-                            <img src={item.img}/>
-                            <p className="name">{item.name}</p>
-                            <a target='_blank' href={item.url}><p className="link">{item.url}</p></a>
+                        <div data-aos="fade-in">
+                            <img data-aos="zoom-in" src={item.img}/>
+                            <p data-aos="zoom-in" className="name">{item.name}</p>
+                            <a data-aos="zoom-in" target='_blank' href={item.url}><p className="link">{item.url}</p></a>
                         </div>
                     )
                 })}
