@@ -1,6 +1,6 @@
 $ColorPurple: #BD00FF;
 $ColorBlue: #0047AB;
-$ColorBaclk: #181818;
+$ColorBlack: #181818;
 $ColorTranslucentWhite: rgba(255, 255, 255, 0.2);
 
 .apresentacao{
@@ -52,9 +52,20 @@ $ColorTranslucentWhite: rgba(255, 255, 255, 0.2);
                 font-size: 1.7rem;
             }
         }
+        .icons{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            a{
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
     }
     .img{
-        background-color: $ColorBaclk;
+        background-color: $ColorBlack;
         border-radius: 15px;
         @media screen and (max-width : '500px') {
             width: 100%;

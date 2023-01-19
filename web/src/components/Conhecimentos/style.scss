@@ -1,5 +1,5 @@
 $ColorTranslucentWhite: rgba(255, 255, 255, 0.2);
-$ColorBaclk: #181818;
+$ColorBlack: #181818;
 
 .conhecimentos{
     width: 70%;
@@ -43,7 +43,7 @@ $ColorBaclk: #181818;
         }
     }
     h1{
-        color: $ColorBaclk;
+        color: $ColorBlack;
         @media screen and (max-width : '500px') {
             margin-bottom: 10px;
          }

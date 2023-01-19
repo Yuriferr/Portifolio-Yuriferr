@@ -16,16 +16,28 @@ export default function Projetos(){
             name: 'Tela de Login - League of Legends',
             img: loginLeagueOfLegends,
             url: 'https://login-league-of-legends.vercel.app',
+            linguagens: [
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+            ]
         },
         {
             name: 'Landing Page - Yuriferr',
             img: landingPage,
             url: 'https://landingpage-yuriferr.vercel.app',
+            linguagens: [
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+            ]
         },
         {
             name: 'Blog Compacto - Deuses Gregos',
             img: siteDeusesGregos,
             url: 'https://blogcompacto-mitologiagrega.vercel.app',
+            linguagens: [
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+            ]
         }
     ])
 
@@ -35,11 +47,21 @@ export default function Projetos(){
             <div className="cards">
                 {projetos.map((item, index) => {
                     return(
-                        <div data-aos="fade-in">
-                            <img data-aos="zoom-in" src={item.img}/>
-                            <p data-aos="zoom-in" className="name">{item.name}</p>
-                            <a data-aos="zoom-in" target='_blank' href={item.url}><p className="link">{item.url}</p></a>
-                        </div>
+                        <a target="_blank" href={item.url}>
+                            <div className="posts" data-aos="zoom-in" style={{backgroundImage : `url(${item.img})`}}>
+                                <div className="fundo"/>
+                                <p data-aos="zoom-in" className="name">{item.name}</p>
+                                <div className="images">
+                                    {item.linguagens.map((item, index) => {
+                                        return(
+                                            <div data-aos="zoom-in" key={index}>
+                                                <img src={item}/>
+                                            </div>
+                                        )
+                                    })}
+                                </div>
+                            </div>
+                        </a>
                     )
                 })}
             </div>
