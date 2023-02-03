@@ -1,7 +1,7 @@
 import React from "react"
 import './style.scss'
 
-import logo from '../../assets/LogoBranca.png'
+import logo from '../../assets/logoBranca.png'
 
 import { BsLinkedin, BsGithub,  } from 'react-icons/bs'
 
