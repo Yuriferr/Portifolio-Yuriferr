@@ -1,7 +1,7 @@
 import React from "react"
 import './style.scss'
 
-import logo from '../../assets/LogoSemFundo.png'
+import logo from '../../assets/LogoBranca.png'
 
 import { BsLinkedin, BsGithub,  } from 'react-icons/bs'
 
@@ -16,15 +16,15 @@ export default function Footer(){
                 </a>
             </div>
             <a target="_blank" href="https://www.linkedin.com/in/yuriferr">
-                <BsLinkedin color="#BD00FF" size={20}/>
+                <BsLinkedin color="white" size={25}/>
                 <p></p>
             </a>
             <a target="_blank" href="https://github.com/Yuriferr">
-                <BsGithub color="#BD00FF" size={25}/>
+                <BsGithub color="white" size={25}/>
                 <p></p>
             </a>
             <a href="mailto:yurifernandespreto@gmail.com">
-                <MdEmail color="#BD00FF" size={30}/>
+                <MdEmail color="white" size={30}/>
             </a>
         </footer>
     )

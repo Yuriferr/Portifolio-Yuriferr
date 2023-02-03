@@ -6,15 +6,13 @@ $ColorBlack: #181818;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+    width: 80%;
+    gap: 20px;
     @media screen and (max-width: '500px') {
-        width: 80%;
         padding: 20px 7%;
-        gap: 20px;
     }
     @media screen and (min-width: '501px') {
-        width: 80%;
         padding: 50px 5%;
-        gap: 20px;
     }
     h1{
         text-align: center;
