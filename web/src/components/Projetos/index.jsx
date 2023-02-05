@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style.scss";
 
 import siteDeusesGregos from "../../assets/siteDeusesGregos.png";
-import landingPage from "../../assets/landingpageYuriferr.png";
+import netflix from "../../assets/netflix.png";
 import loginLeagueOfLegends from "../../assets/loginLeagueOfLegends.png";
 
 import AOS from "aos";
@@ -21,9 +21,9 @@ export default function Projetos() {
       ],
     },
     {
-      name: "Landing Page - Yuriferr",
-      img: landingPage,
-      url: "https://landingpage-yuriferr.vercel.app",
+      name: "Netflix- Yuriferr",
+      img: netflix,
+      url: "https://netflix-yuriferr.netlify.app",
       linguagens: [
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
