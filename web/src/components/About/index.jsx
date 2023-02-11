@@ -8,9 +8,9 @@ export default () => {
         <div id="about" className="about">
             <h1 className="title">Sobre</h1>
             <div className="description">
-                <img src={imgAbout}/>
+                <img data-aos="fade-up-right" src={imgAbout}/>
 
-                <div className="container-text">
+                <div data-aos="fade-up-left" className="container-text">
                     <p>Meu amor pela tecnologia foi a razão para fazer da programação o meu negócio. Hoje, tenho como objetivo principal desenvolver minhas capacidades como desenvolvedor.</p>
 
                     <p>O primeiro contato com essa área surgiu quando ganhei meu primeiro videogame, jogos que me fizeram me conectar com o mundo virtual e que me motivaram a buscar o conhecimento de como fazê-los. Com o passar dos anos me distanciei do mundo dos games e me aproximei ao mundo web e mobile que me permitiram chegar onde estou.</p>

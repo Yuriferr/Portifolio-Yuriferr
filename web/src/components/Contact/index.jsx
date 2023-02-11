@@ -39,7 +39,7 @@ export default () => {
         <div id="contact" className="contact">
             <h1>Contato</h1>
 
-            <form onSubmit={sendEmail}>
+            <form data-aos="zoom-in" onSubmit={sendEmail}>
                 <input type="text" placeholder="Digite seu nome" onChange={(e) => setName(e.target.value)} value={name}/>
 
                 <input type="text" placeholder="Digite seu email" onChange={(e) => setEmail(e.target.value)} value={email}/>

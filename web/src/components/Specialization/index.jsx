@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./specialization.scss";
 
 import {
@@ -17,13 +17,11 @@ import {
 import { SiTypescript, SiGitlab } from "react-icons/si";
 
 export default () => {
-  const [icon, setIcon] = useState(<DiHtml5 size={250} />);
-
   return (
     <div className="specialization">
       <div className="container-specialization">
         <h1>Especializações</h1>
-        <div className="container-icons">
+        <div data-aos="fade-up" className="container-icons">
           <a>
             <DiHtml5 color="#7569BF" size={50} />
           </a>
