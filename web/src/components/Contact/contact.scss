@@ -1,0 +1,40 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    h1{
+        color: white;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        input{
+            width: 50%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            @media screen and (max-width: '600px') {
+                width: 80%;
+            }
+        }
+        button{
+            width: 50%;
+            padding: 10px;
+            border: 1px solid white;
+            color: white;
+            background-color: #251659;
+            font-size: 1.3rem;
+            border-radius: 5px;
+            transition: all ease 0.2s;
+            &:hover{
+                background-color: white;
+                color: #251659;
+            }
+        }
+    }
+}

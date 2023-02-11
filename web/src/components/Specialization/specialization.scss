@@ -1,0 +1,32 @@
+.specialization{
+    width: 100%;
+    height: fit-content;
+    padding: 30px;
+    .container-specialization{
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        h1{
+            text-align: center;
+            margin: 70px 0;
+        }
+        .container-icons{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-bottom: 50px;
+            a{
+                text-decoration: none;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10px 0;
+            }
+        }
+    }
+}

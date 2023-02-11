@@ -1,0 +1,146 @@
+.presentation{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    z-index: 1;
+    .container-presentation{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 30px;
+        gap: 100px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media screen and (max-width: '1000px') {
+            flex-direction: column;
+            gap: 50px;
+            padding-top: 100px;
+        }   
+        .section-name{
+            width: 30%;
+            height: fit-content;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+            white-space: nowrap;
+            z-index: 1;
+            @media screen and (max-width: '1000px') {
+                width: 100%;
+            }
+            .container-icons{
+                display: flex;
+                gap: 30px;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .section-info{
+            width: 30%;
+            height: fit-content;
+            border-radius: 5px;
+            border: 1px solid white;
+            text-align: left;
+            @media screen and (max-width: '1000px') {
+                width: 50%;
+            }
+            @media screen and (max-width: '600px') {
+                width: 100%;
+            }   
+            .container-mac{
+                background-color: #1f1f1f;
+                border-radius: 5px;
+                .container-balls{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    height: 30px;
+                    padding: 5px;
+                    .ball{
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 100%;
+                        border: 1px solid white;
+                        margin-left: 5px;
+                    }
+                    .red{
+                        background-color: red;
+                    }
+                    .yellow{
+                        background-color: yellow;
+                    }
+                    .green{
+                        background-color: green;
+                    }
+                }
+                .border{
+                    width: 100%;
+                    height: 1px;
+                    background-color: white;
+                }
+                .division{
+                    display: flex;
+                    padding: 5px;
+                    .container-infos{
+                        left: 0;
+                        width: 10%;
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 5px;
+                        .container-numbers{
+                            color: white;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 0.2px 0;
+                        }
+                    }
+
+                    .container-data{
+                        display: flex;
+                        flex-direction: column;
+                        margin: 5px;
+                        .title{
+                            margin-left: 20px;
+                        }
+                        p{
+                           color: rgb(122, 209, 255);
+                        }
+                        .key{
+                            color: white;
+                        }
+                        .string{
+                            color: orange;
+                        }
+                        .int{
+                            color: aqua;
+                        }
+                        .true{
+                            color: green;
+                        }
+                        .comma{
+                            color: white;
+                        }
+                        .object{
+                            margin-left: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.wave{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    position: absolute;
+    @media screen and (max-width: '1000px') {
+        margin-top: 250px;
+    }   
+}

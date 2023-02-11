@@ -1,65 +1,48 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import './App.scss'
 
-import Logo from './assets/logoBranca.png'
-import Apresentacao from './components/Apresentacao'
-import Conhecimentos from './components/Conhecimentos'
+import Header from './components/Header'
+import Presentation from './components/Presentation'
+import About from './components/About'
+import Projects from './components/Projects'
+import Specialization from './components/Specialization'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 
-import Header from './components/Header'
-import Projetos from './components/Projetos'
-import Sobre from './components/Sobre'
-
 export default function App() {
-  const [iconMenu, setIconMenu] = useState(false)
+  const [whiteHeader, setWhiteHeader] = useState(false)
 
   useEffect(() => {
-    ActiveMenu();
-  }, [])
-   
-  function ActiveMenu(){
-    if(window.screen.width <= '500px'){
-      setIconMenu(true)
+    const scrollListener = () => {
+      if(window.scrollY > 10) {
+        setWhiteHeader(true)
+      } else{
+        setWhiteHeader(false)
+      }
     }
-  }
+
+    window.addEventListener('scroll', scrollListener);
+    return () => {
+      window.removeEventListener('scroll', scrollListener);
+    }
+  }, [])
+
 
   return (
     <div className="App">
-      <Header/>
+      <Header white={whiteHeader}/>
 
-      <section className='containerApresentacao'>
-        <Apresentacao/>
-      </section>
+      <Presentation/>
 
-      <div className='containerBorda'> 
-        <div className='borda'/>
-      </div>
+      <About/>
 
+      <Projects/>
 
-      <section id='sobre' className='containerSobre'>
-        <Sobre/>
-      </section>
+      <Specialization/>
 
-      <div className='containerBorda'> 
-        <div className='borda'/>
-      </div>
+      <Contact/>
 
-      <section id='projetos' className='containerProjetos'>
-        <Projetos/>
-      </section>
-
-      <div className='containerBorda'> 
-        <div className='borda'/>
-      </div>
-
-      <section id='conhecimentos' className='containerConhecimentos'>
-        <Conhecimentos/>
-      </section>
-
-      <section id='contatos'>
-        <Footer/>
-      </section>
-
+      <Footer/>
     </div>
   )
 }
