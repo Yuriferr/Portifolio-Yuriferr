@@ -54,7 +54,7 @@ export default () => {
                 </p>
 
                 <p>
-                  <span className="title">office: </span>
+                  <span className="title">role: </span>
                   <span className="string">"Desenvolvedor Full Stack"</span>
                   <span className="comma">,</span>
                 </p>
