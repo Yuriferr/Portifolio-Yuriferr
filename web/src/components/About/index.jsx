@@ -15,7 +15,7 @@ export default function About() {
 
       <div className="description">
         <p>
-          Sobre mim: Olá! Sou Yuri Fernandes, um desenvolvedor Full Stack
+          Sobre mim: <br/> Olá! Sou Yuri Fernandes, um desenvolvedor Full Stack
           apaixonado por tecnologia e pela arte de criar soluções digitais.
           Atualmente, estou cursando a graduação em Análise e Desenvolvimento de
           Sistemas, aprimorando constantemente minhas habilidades e
@@ -23,7 +23,7 @@ export default function About() {
         </p>
 
         <p>
-          Formação e experiência: Além de minha formação acadêmica, tenho uma
+          Formação e experiência: <br/> Além de minha formação acadêmica, tenho uma
           sólida base técnica adquirida durante meu ensino médio no Colégio
           Cotemig, onde me especializei em programação. Essa base sólida me
           proporcionou uma compreensão profunda dos princípios fundamentais da
