@@ -1,0 +1,83 @@
+.Card{
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    transform: scale(1);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+
+    &:hover{
+        border: 1px solid #3A6073;
+        transform: scale(1.1);
+
+        .background{
+            background-image: linear-gradient(90deg, #101b21 50%, transparent);
+        }
+    }
+
+    section{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        z-index: 3;
+
+        .number{
+            width: 30%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            .border{
+                width: 50px;
+                height: 2px;
+                border-radius: 20px;
+                background-color: white;
+            }
+        }
+
+        .description{
+            width: 70%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1{
+                font-size: 1.2rem;
+            }
+    
+            p{
+                color: rgba(255, 255, 255, 0.5);
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+    img{
+        width: 50%;
+        height: 100%;
+        border-radius: 0 5px 5px 0;
+        position: absolute;
+        right: 0;
+        object-fit: cover;
+        z-index: 1;
+    }
+
+    .background{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(90deg, #101b21 50%, #101b217a);
+        border-radius: 5px;
+        z-index: 2;
+    }
+}

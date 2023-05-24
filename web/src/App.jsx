@@ -1,48 +1,42 @@
-import { useState, useEffect } from 'react'
-import './App.scss'
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import Header from './components/Header'
-import Presentation from './components/Presentation'
-import About from './components/About'
-import Projects from './components/Projects'
-import Specialization from './components/Specialization'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import "swiper/css";
+import "swiper/css/pagination";
+
+import "./App.scss";
+
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+import Main from "./components/Main";
+import Projects from "./components/Projects";
+import About from "./components/About";
+import Skills from './components/Skills'
+
+import { Mousewheel, Pagination } from "swiper";
 
 export default function App() {
-  const [whiteHeader, setWhiteHeader] = useState(false)
-
-  useEffect(() => {
-    const scrollListener = () => {
-      if(window.scrollY > 10) {
-        setWhiteHeader(true)
-      } else{
-        setWhiteHeader(false)
-      }
-    }
-
-    window.addEventListener('scroll', scrollListener);
-    return () => {
-      window.removeEventListener('scroll', scrollListener);
-    }
-  }, [])
-
-
   return (
     <div className="App">
-      <Header white={whiteHeader}/>
 
-      <Presentation/>
+      <Header/>
 
-      <About/>
-
-      <Projects/>
-
-      <Specialization/>
-
-      <Contact/>
+      <Swiper
+        direction={"vertical"}
+        slidesPerView={1}
+        spaceBetween={30}
+        mousewheel={true}
+        modules={[Mousewheel, Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide><Main/></SwiperSlide>
+        <SwiperSlide><Projects/></SwiperSlide>
+        <SwiperSlide><About/></SwiperSlide>
+        <SwiperSlide><Skills/></SwiperSlide>
+      </Swiper>
 
       <Footer/>
     </div>
-  )
+  );
 }

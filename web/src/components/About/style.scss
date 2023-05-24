@@ -1,0 +1,39 @@
+.About{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    .title{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+
+        h1{
+            font-size: 5rem;
+        }
+
+        .background{
+            top: 0;
+            position: absolute;
+            color: rgba(255, 255, 255, 0.2);
+            font-size: 6rem;
+            font-family: 'Archivo Black', sans-serif;
+        }
+    }
+
+    .description{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+}

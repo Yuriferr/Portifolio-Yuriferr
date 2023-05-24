@@ -1,25 +1,49 @@
 import React from "react";
-import './about.scss'
+import "./style.scss";
 
-import imgAbout from '../../assets/imgabout.png'
+import Pagination from "../Pagination";
 
-export default () => {
-    return(
-        <div id="about" className="about">
-            <h1 className="title">Sobre</h1>
-            <div data-aos="zoom-in" className="description">
-                <img src={imgAbout}/>
+export default function About() {
+  return (
+    <div className="About">
+      <Pagination numberPage={"03"} percentage={"75%"} />
 
-                <div className="container-text">
-                    <p>Meu amor pela tecnologia foi a razão para fazer da programação o meu negócio. Hoje, tenho como objetivo principal desenvolver minhas capacidades como desenvolvedor.</p>
+      <div className="title">
+        <h1>Sobre</h1>
+        <p className="background">SOBRE</p>
+      </div>
 
-                    <p>O primeiro contato com essa área surgiu quando ganhei meu primeiro videogame, jogos que me fizeram conectar com o mundo virtual e que me motivaram a buscar o conhecimento de como fazê-los. Com o passar dos anos distanciei do mundo dos games e me aproximei ao mundo web e mobile que me permitiram chegar onde estou.</p>
+      <div className="description">
+        <p>
+          Sobre mim: Olá! Sou Yuri Fernandes, um desenvolvedor Full Stack
+          apaixonado por tecnologia e pela arte de criar soluções digitais.
+          Atualmente, estou cursando a graduação em Análise e Desenvolvimento de
+          Sistemas, aprimorando constantemente minhas habilidades e
+          conhecimentos nesta área em constante evolução.
+        </p>
 
-                    <p>Sou desenvolvedor há 3 anos, sei que estou no começo mas já percebi minha evolução. Nesses anos me desafiei ao máximo no mundo dos códigos e sempre  busquei fazer o mais perfeito, e posso dizer que errei com orgulho, pois é nos mais simples erros que evoluímos nossos conhecimentos.</p>
+        <p>
+          Formação e experiência: Além de minha formação acadêmica, tenho uma
+          sólida base técnica adquirida durante meu ensino médio no Colégio
+          Cotemig, onde me especializei em programação. Essa base sólida me
+          proporcionou uma compreensão profunda dos princípios fundamentais da
+          lógica de programação e me permitiu iniciar minha jornada como
+          desenvolvedor Full Stack há mais de 3 anos.
+        </p>
 
-                    <p>Busco sempre estar o mais atualizado possível sobre novas linguagens e sempre busco deixar meus códigos mais otimizados.</p>
-                </div>
-            </div>
-        </div>
-    )
+        <p>
+          Meu objetivo é criar soluções inovadoras e funcionais, unindo o melhor
+          dos mundos front-end e back-end para entregar experiências digitais
+          excepcionais aos usuários. Convido você a explorar meu portfólio, onde
+          compartilho alguns dos projetos que desenvolvi, demonstrando minha
+          dedicação em transformar ideias em realidade por meio do código.
+        </p>
+
+        <p>
+          Vamos juntos explorar novas possibilidades e construir um futuro
+          digital inspirador!
+        </p>
+      </div>
+    </div>
+  );
 }
