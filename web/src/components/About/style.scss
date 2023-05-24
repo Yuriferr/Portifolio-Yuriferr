@@ -37,4 +37,25 @@
         gap: 30px;
         margin-bottom: 50px;
     }
+
+    @media screen and (max-width: 700px){
+        .title{
+            padding-top: 30px;
+
+            h1{
+                font-size: 3rem;
+            }
+
+            .background{
+                font-size: 4rem;
+            }
+        }
+
+
+        .description{
+            font-size: 0.75rem;
+            width: 90%;
+            gap: 20px;
+        }
+    }
 }
