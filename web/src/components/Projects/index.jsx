@@ -32,8 +32,8 @@ export default function Projects() {
 
         <Cards
           number="02"
-          name="Login Inverno"
-          description="Tela de login tematica de inverno"
+          name="Portfólio Arte"
+          description="Desenvolvimento de um portfólio completo para um artista"
           image="https://cdn.discordapp.com/attachments/1096821782591311992/1110985877552894074/Captura_de_tela_2023-05-24_143750.png"
           link="https://artglow-yuriferr.netlify.app"
         />

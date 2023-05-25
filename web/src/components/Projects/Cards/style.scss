@@ -80,4 +80,32 @@
         border-radius: 5px;
         z-index: 2;
     }
+
+    @media screen and (max-width: 700px){
+        section{
+            width: 70%;
+
+            .number{
+                gap: 5px;
+
+                .border{
+                    width: 20px;
+                }
+            }
+
+
+            .description{
+                gap: 5px;
+
+                h1{
+                    font-size: 1rem;
+                }
+        
+                p{
+                    color: rgba(255, 255, 255, 0.5);
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
 }
