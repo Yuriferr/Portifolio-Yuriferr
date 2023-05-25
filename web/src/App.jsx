@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import "./App.scss";
+import Background from './assets/background.jpg'
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -19,7 +20,6 @@ import { Mousewheel, Pagination } from "swiper";
 export default function App() {
   return (
     <div className="App">
-
       <Header/>
 
       <Swiper
@@ -37,6 +37,8 @@ export default function App() {
       </Swiper>
 
       <Footer/>
+
+      <img src={Background} className="background-web"/>
     </div>
   );
 }
