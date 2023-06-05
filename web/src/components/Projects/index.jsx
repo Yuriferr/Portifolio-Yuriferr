@@ -18,7 +18,7 @@ export default function Projects() {
       </div>
 
       <p>
-        Meus Recentes Projetos
+        Meus Projetos Recentes
       </p>
 
       <div className="Cards">
